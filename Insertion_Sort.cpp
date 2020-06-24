@@ -26,15 +26,6 @@ vector<int> InsersionSort(vector<int> A ,int N){
     A.erase(A.begin()+i);
     A.insert(A.begin()+j+1,v);
 
-#if 0
-    int j=i-1;
-
-    while(j>=0 && A.at(j)>v){
-      A.at(j+1) = A.at(j);
-      j--;
-    }
-    A.at(j+1)=v;
-#endif
     print_vec_data(A);
   }
 
